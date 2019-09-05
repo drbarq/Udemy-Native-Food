@@ -32,5 +32,4 @@ export default () => {
     }, [])
 
     return [searchApi, results, errorMessage]
-
 }
