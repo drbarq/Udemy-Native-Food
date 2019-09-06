@@ -16,11 +16,11 @@ const SearchScreen = () => {
         })
     }
     
-    console.log(results)
+    // console.log(results)
 
     return (
-        // <View style={{borderColor: 'red', borderWidth: 10 }}>
-        <View style={{ flex: 1 }}>
+        // <View style={{ flex: 1 }}>
+        <>
             <SearchBar 
                 term={term} 
                 // onTermChange={newTerm => setTerm(newTerm)}
@@ -29,7 +29,6 @@ const SearchScreen = () => {
             />
             {/* Conditionally render error message */}
             {errorMessage ? <Text>{errorMessage}</Text> : null}
-            <Text>We have found {results.length} results</Text>
             <ScrollView>
                 <ResultsList 
                     title="Cost Effective"
@@ -44,7 +43,8 @@ const SearchScreen = () => {
                     results={filterResultsByPrice('$$$')}
                 />
             </ScrollView>
-        </View>
+        {/* </View> */}
+        </>
     )
 }
 
