@@ -19,7 +19,8 @@ const SearchScreen = () => {
     console.log(results)
 
     return (
-        <View>
+        // <View style={{borderColor: 'red', borderWidth: 10 }}>
+        <View style={{ flex: 1 }}>
             <SearchBar 
                 term={term} 
                 // onTermChange={newTerm => setTerm(newTerm)}
