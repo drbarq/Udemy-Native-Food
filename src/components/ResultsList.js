@@ -4,6 +4,10 @@ import { withNavigation } from 'react-navigation'
 import ResultsDetail from './ResultsDetail'
 
 const ResultsList = props => {
+    // conditional logic to hide an element with no results
+    if (!props.results.length) {
+        return null
+    }
     return (
         <View style={styles.container}>
             <Text style={styles.title}>{props.title}</Text>
